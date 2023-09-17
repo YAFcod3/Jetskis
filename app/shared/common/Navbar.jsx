@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import NavbarItem from "./NavbarItem";
+import Link from "next/link";
 
 function Navbar() {
   const TOP_OFFSET = 66;
@@ -49,10 +50,15 @@ function Navbar() {
             showBackground ? "text-black " : "text-white "
           }`}
         >
-          <NavbarItem label="All posts" />
+          <Link href="/catalogue">
+            {" "}
+            <NavbarItem label="All posts" />
+          </Link>
           <NavbarItem label="Contact us" />
-
-          <NavbarItem label="About us" />
+          <Link href="/about">
+            {" "}
+            <NavbarItem label="About us" />
+          </Link>
         </div>
 
         <div className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">

@@ -4,7 +4,11 @@ import HeroVideo from "./components/HeroVideo";
 import Features from "./components/Features";
 import Offer from "./components/Offer";
 import FeaturesVideoHover from "./components/FeaturesVideoHover";
-import Footer from "./components/Footer";
+import { Inter, Lora, Source_Sans_3 } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+const sans = Source_Sans_3({ subsets: ["latin"] });
+
 
 export default function Home() {
   return (
@@ -12,12 +16,16 @@ export default function Home() {
       <HeroVideo />
       
         <Features />
+        <div className={inter.className}>
 
       <Offer />
+      </div>
+
+      <div className={sans.className}>
       <div className="mt-20 flex max-w-5xl mx-auto  flex-col items-center gap-30">
         <FeaturesVideoHover />
       </div>
-      <Footer />
+      </div>
     </>
   );
 }

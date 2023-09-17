@@ -41,7 +41,7 @@ function FeaturesItem({ card }) {
           </span>
           <span className="text-sm text-slate-700">
             <span className="font-bold">maxSpeed:</span>{" "}
-            {technicalSpecifications.maxSpeed} mph
+            {technicalSpecifications.maxSpeed}
           </span>
           {/* flex precio - boton */}
           <div className="flex justify-between items-center w-full">

@@ -1,8 +1,9 @@
-import Navbar from './components/Navbar'
+import Navbar from './shared/common/Navbar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter,Lora, Source_Sans_3 } from 'next/font/google'
+import Footer from './shared/common/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const lora = Lora({ subsets: ['latin'], weight: '400'  })
 
 export const metadata = {
   title: 'Yaths/Jet Ski',
@@ -12,9 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={lora.className}>
         <Navbar/>
-        {children}</body>
+        {children}
+        <Footer/>
+
+        </body>
     </html>
   )
 }
