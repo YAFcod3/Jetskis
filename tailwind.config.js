@@ -12,7 +12,18 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        wave: {
+          to: {
+            "margin-left": "-51%"
+          }
+        }
+      }
     },
+    animation: {
+      wave: "wave 1.5s ease-in-out infinite"
+    }
+
   },
   plugins: [
   ],
