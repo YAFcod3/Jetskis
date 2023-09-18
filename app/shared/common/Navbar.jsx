@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from "react";
 import NavbarItem from "./NavbarItem";
 import Link from "next/link";
+import MenuMobile from "./MenuMobile";
 
-function Navbar() {
+function Navbar({ type }) {
   const TOP_OFFSET = 66;
 
   const [showBackground, setShowBackground] = useState(false);
@@ -26,43 +27,70 @@ function Navbar() {
 
   return (
     <nav
-      className="w-full fixed z-40
+      className="w-full fixed   z-40
     
     "
     >
       <div
-        className={`px-4  md:px-16 py-6 flex flex-row items-center transition duration-500 ${
-          showBackground ? "bg-white shadow-lg " : ""
+        className={`px-4 md:px-16 py-6 flex flex-row items-center justify-between transition duration-500 ${
+          type === "showEffect"
+            ? showBackground
+              ? "bg-white shadow-lg "
+              : ""
+            : "bg-white shadow-lg "
         } `}
       >
         {/* logo */}
-        <div
-          className={` transition duration-500 uppercase font-bold text-md md:text-2xl ${
-            showBackground ? "text-black " : "text-white "
-          }`}
-        >
-          logo
-        </div>
+        <Link href="/">
+          <div
+            className={` transition duration-500 uppercase font-bold text-md md:text-2xl ${
+              type === "showEffect"
+                ? showBackground
+                  ? "text-black "
+                  : "text-white "
+                : "text-black "
+            }`}
+          >
+            logo
+          </div>
+        </Link>
 
         {/* elementos nav */}
         <div
-          className={`flex-grow ml-8 gap-7 hidden lg:flex transition duration-500  ${
-            showBackground ? "text-black " : "text-white "
+          className={`gap-7 hidden sm:flex transition duration-500  ${
+            type === "showEffect"
+              ? showBackground
+                ? "text-black "
+                : "text-white "
+              : "text-black "
           }`}
         >
           <Link href="/catalogue">
             {" "}
             <NavbarItem label="All posts" />
           </Link>
-          <NavbarItem label="Contact us" />
+          <Link href="/contact">
+            {" "}
+            <NavbarItem label="Contact us" />
+          </Link>{" "}
           <Link href="/about">
             {" "}
             <NavbarItem label="About us" />
           </Link>
         </div>
 
-        <div className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
-          <p className="text-white text-sm">Browse</p>
+        <div
+          // className={`sm:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative ${
+          //   type === "showEffect"
+          //   ? showBackground
+          //     ? "text-black "
+          //     : "text-white "
+          //   : "text-black "
+          // } `}
+          className="sm:hidden"
+        >
+          <MenuMobile/>
+          {/* <p className="text-sm">Browse</p> */}
         </div>
       </div>
     </nav>
