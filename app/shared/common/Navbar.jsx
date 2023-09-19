@@ -41,7 +41,7 @@ function Navbar({ type }) {
         } `}
       >
         {/* logo */}
-        <Link href="/">
+        <Link href="">
           <div
             className={` transition duration-500 uppercase font-bold text-md md:text-2xl ${
               type === "showEffect"
