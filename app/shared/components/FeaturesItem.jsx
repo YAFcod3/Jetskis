@@ -1,6 +1,11 @@
+// "use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+// const imageLoader = ({ src, width, quality }) => {
+//   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
+// };
 
 function FeaturesItem({ card }) {
   const { name, description, image, pricePerHour, technicalSpecifications } =
@@ -13,9 +18,17 @@ function FeaturesItem({ card }) {
         <div className="w-full h-56 overflow-hidden relative group">
           {/* Imagen 1 */}
           <Image
+          // blurDataURL="data:image/jpeg..."
+          // onLoad={}
+          // onLoadingComplete={}
+            // loader={imageLoader}
             src={image}
             width={300}
             height={300}
+            // blurDataURL=""
+            // placeholder="blur"
+            // quality={100}
+            // fill
             alt="Picture of the author"
             className="w-full h-full absolute object-cover transform scale-100 transition-transform duration-500 ease-in-out hover:scale-105"
           />

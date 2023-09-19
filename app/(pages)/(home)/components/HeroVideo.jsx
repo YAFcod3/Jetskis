@@ -13,7 +13,7 @@ function HeroVideo() {
         data-smart-video
       ></video>
 
-      <div className="absolute top-[30%] md:top-[40%] ml-4 md:ml-16">
+      <div className="absolute top-[40%]  ml-4 md:ml-16">
         <p
           className="text-white 
         text-1xl 
@@ -24,20 +24,21 @@ function HeroVideo() {
           drop-shadow-xl
            "
         >
-          Yaths/Jet Ski Featured
+          Jet Ski Rentals
         </p>
-        <p className="text-white text-[8px] md:text-lg mt-3 md:mt-8 w-[90%] md:w-[80%] lg:w-[50%] drop-shadow-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus dolorem, consequuntur eum sit mi</p>
+        <p className="text-white text-[8px] md:text-lg mt-3 my-4 w-[90%] md:w-[80%] lg:w-[50%] drop-shadow-xl ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus
+          dolorem, consequuntur eum sit mi
+        </p>
 
         <div>
           {/* poner icono aqui */}
           {/* boton */}
-          <button 
-          className="bg-white text-white bg-opacity-30 rounded-md py-1 md:py-2 px-2 md:px-4 w-auto text-xs lg:text-lg font-semibold flex flex-row items-center hover:bg-opacity-20 transition">
-            Reservar
+          <button className="bg-white text-white bg-opacity-30 rounded-md py-1 md:py-2 px-2 md:px-4 w-auto text-xs lg:text-lg font-semibold flex flex-row items-center hover:bg-opacity-20 transition">
+            Reserve
           </button>
         </div>
       </div>
-
     </div>
   );
 }

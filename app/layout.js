@@ -5,8 +5,8 @@ import Footer from "./shared/common/Footer";
 const lora = Lora({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Yaths/Jet Ski",
-  description: "Yaths/Jet Ski Reservation",
+  title: "Jet Ski Rentals",
+  description: "Jet Ski Reservation",
 };
 
 export default function RootLayout({ children }) {
