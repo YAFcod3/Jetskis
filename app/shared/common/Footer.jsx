@@ -11,54 +11,72 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-wrap justify-center md:justify-start">
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6 md:mb-0">
-            <div className="bg-black text-white p-4 rounded hover:bg-blue-700 hover:text-white transition duration-300">
-              <h3 className="text-lg font-semibold mb-2 hover:text-teal-400">
+          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6 md:mb-0 flex justify-center">
+            <div className="bg-black text-white p-4 rounded backdrop-contrast-125 bg-white/30
+             hover:bg-blue-700 hover:text-white transition duration-300 flex justify-center flex-col" >
+              <h3 className="text-lg font-semibold mb-2">
                 Columna 1
               </h3>
-              <p>Contenido de la columna 1</p>
+              <a href="" className= " hover:text-teal-400 outline outline-offset-2 outline-blue-500">
+                Contenido de la columna 1
+              </a>
               <div className="line"></div>
             </div>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6 md:mb-0">
-            <div className="bg-black text-white p-4 rounded hover:bg-blue-700 hover:text-white transition duration-300">
-              <h3 className="text-lg font-semibold mb-2 hover:text-teal-400">
+          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6 md:mb-0 flex justify-center">
+            <div className="bg-black text-white p-4 rounded backdrop-contrast-125 bg-white/30
+             hover:bg-blue-700 hover:text-white transition duration-300 flex justify-center flex-col">
+              <h3 className="text-lg font-semibold mb-2">
                 Columna 2
               </h3>
-              <p>Contenido de la columna 2</p>
+              <a href="" className=" hover:text-teal-400 outline outline-offset-2 outline-blue-500">
+                Contenido de la columna 2
+              </a>
               <div className="line"></div>
             </div>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6 md:mb-0">
-            <div className="bg-black text-white p-4 rounded hover:bg-blue-700 hover:text-white transition duration-300">
-              <h3 className="text-lg font-semibold mb-2 hover:text-teal-400">
+          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6 md:mb-0 flex justify-center">
+            <div className="bg-black text-white p-4 rounded backdrop-contrast-125 bg-white/30
+             hover:bg-blue-700 hover:text-white transition duration-300 flex justify-center flex-col">
+              
+              <h3 className="text-lg font-semibold mb-2">
                 Columna 3
               </h3>
-              <p>Contenido de la columna 3</p>
+
+              <a href="" className=" hover:text-teal-400 outline outline-offset-2 outline-blue-500">
+                Contenido de la columna 3
+              </a>
+
               <div className="line"></div>
             </div>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4">
-            <div className="bg-black text-white p-4 rounded hover:bg-blue-700 hover:text-white transition duration-300">
-              <h3 className="text-lg font-semibold mb-2 hover:text-teal-400">
+          <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 flex justify-center">
+            <div className=" bg-black text-white p-4 rounded backdrop-contrast-125 bg-white/30
+             hover:bg-blue-700 hover:text-white transition duration-300 flex justify-center flex-col">
+              
+              <h3 className="text-lg font-semibold mb-2">
                 Columna 4
               </h3>
-              <p>Contenido de la columna 4</p>
+
+              <a href="" className=" hover:text-teal-400 outline outline-offset-2 outline-blue-500">
+                Contenido de la columna 4
+              </a>
+
               <div className="line"></div>
             </div>
           </div>
         </div>
 
         <div className="text-center mt-4">
-          <div className="border-b-2 border-blue-300 pb-2 mb-2"></div>
-          <div className="flex justify-center">
-            <p className="mx-2 px-6">Términos y Condiciones</p>
-            <p className="mx-2 px-6">Política de Privacidad</p>
-            <p className="mx-2 px-6">Derechos Reservados</p>
-          </div>
+          <div className="border-b-2  border-blue-300 pb-2 mb-2"></div>
+           <div className="flex justify-center">
+            <p className="mx-0 px-1.5">Términos y Condiciones</p>
+            <p className="mx-0 px-1.5">Política de Privacidad</p>
+            <p className="mx-0 px-1.5">Derechos Reservados</p>
+           </div>
         </div>
       </div>
     </footer>
