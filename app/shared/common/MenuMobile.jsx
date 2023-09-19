@@ -19,11 +19,11 @@ const MenuMobile = () => {
     <div>
       {/* SHORTCUT */}
       <Image
-        src= "/open.png"
+        src= "/barra-de-menus.png"
         // src={open ? "/close.png" : "/open.png"}
         alt=""
-        width={20}
-        height={20}
+        width={25}
+        height={25}
         onClick={() => setOpen(!open)}
         className="cursor-pointer"
       />
