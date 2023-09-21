@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import NavbarItem from "./NavbarItem";
 import Link from "next/link";
 import MenuMobile from "./MenuMobile";
+import Image from "next/image";
 
 function Navbar({ type }) {
   const TOP_OFFSET = 66;
@@ -26,11 +27,7 @@ function Navbar({ type }) {
   }, []);
 
   return (
-    <nav
-      className="w-full fixed   z-40
-    
-    "
-    >
+    <nav className="w-full fixed z-40 ">
       <div
         className={`px-4 md:px-16 py-6 flex flex-row items-center justify-between transition duration-500 ${
           type === "showEffect"
@@ -40,7 +37,15 @@ function Navbar({ type }) {
             : "bg-white shadow-lg "
         } `}
       >
+        <Image
+          src="/Logo.svg"
+          width={100}
+          height={100}
+          alt="Picture of the author"
+          className="absolute w-20 h-20 object-cover z-10 opacity-100 cursor-pointer hover:animate-pulse overflow-hidden transition-transform transform hover:scale-110"
+        />
         {/* logo */}
+
         <Link href="">
           <div
             className={` transition duration-500 uppercase font-bold text-md md:text-2xl ${
@@ -50,9 +55,7 @@ function Navbar({ type }) {
                   : "text-white "
                 : "text-black "
             }`}
-          >
-            logo
-          </div>
+          ></div>
         </Link>
 
         {/* elementos nav */}
@@ -65,15 +68,24 @@ function Navbar({ type }) {
               : "text-black "
           }`}
         >
-          <Link href="/catalogue">
+          <Link
+            href="/catalogue"
+            className="overflow-hidden transition-transform transform hover:scale-110"
+          >
             {" "}
             <NavbarItem label="All posts" />
           </Link>
-          <Link href="/contact">
+          <Link
+            href="/contact"
+            className="overflow-hidden transition-transform transform hover:scale-110"
+          >
             {" "}
             <NavbarItem label="Contact us" />
           </Link>{" "}
-          <Link href="/about">
+          <Link
+            href="/about"
+            className="overflow-hidden transition-transform transform hover:scale-110"
+          >
             {" "}
             <NavbarItem label="About us" />
           </Link>
@@ -89,7 +101,7 @@ function Navbar({ type }) {
           // } `}
           className="sm:hidden"
         >
-          <MenuMobile/>
+          <MenuMobile />
           {/* <p className="text-sm">Browse</p> */}
         </div>
       </div>
