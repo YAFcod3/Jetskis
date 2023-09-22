@@ -13,7 +13,7 @@ function FeaturesItem({ card }) {
 
   return (
     <>
-      <div className="w-[280px] shadow-md  ">
+      <div className="w-[280px] shadow-lg rounded-md ">
         {/* contenedror de intercambio de imagen */}
         <div className="w-full h-56 overflow-hidden relative group">
           {/* Imagen 1 */}

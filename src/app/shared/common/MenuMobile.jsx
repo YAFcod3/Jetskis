@@ -6,9 +6,10 @@ import Link from "next/link";
 
 const links = [
   { id: 1, title: "Home", url: "/" },
-  { id: 2, title: "All Items", url: "/catalogue" },
-  { id: 3, title: "About us", url: "/about" },
-  { id: 4, title: "Contact us", url: "/contact" },
+  { id: 2, title: "Our Services", url: "/catalogue" },
+  { id: 3, title: "FAQ", url: "/catalogue" },
+  { id: 4, title: "About us", url: "/about" },
+  { id: 5, title: "Contact us", url: "/contact" },
 ];
 
 //  mobile menu
@@ -19,7 +20,7 @@ const MenuMobile = () => {
     <div>
       {/* SHORTCUT */}
       <Image
-        src= "/barra-de-menus.png"
+        src="/barra-de-menus.png"
         // src={open ? "/close.png" : "/open.png"}
         alt=""
         width={25}
@@ -34,7 +35,9 @@ const MenuMobile = () => {
               {item.title}
             </Link>
           ))}
-          <div className="cursor-pointer" onClick={() => setOpen(false)}>Close</div>
+          <div className="cursor-pointer" onClick={() => setOpen(false)}>
+            Close
+          </div>
         </div>
       )}
     </div>
