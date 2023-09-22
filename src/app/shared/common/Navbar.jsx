@@ -38,10 +38,10 @@ function Navbar({ type }) {
         } `}
       >
         <Image
-          src={showBackground ? "/Logo.svg" : "/Logo-white.svg"}
+          src={type === "showEffect" ?showBackground ? "/Logo.svg" : "/Logo-white.svg" :"/Logo.svg"}
           // src="/Logo.svg"
-          width={100}
-          height={100}
+          width={20}
+          height={20}
           alt="Picture of the author"
           className="absolute w-20 h-20 object-cover z-10 opacity-100 cursor-pointer hover:animate-pulse overflow-hidden transition-transform transform hover:scale-110"
         />
