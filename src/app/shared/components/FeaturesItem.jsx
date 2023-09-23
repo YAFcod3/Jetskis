@@ -34,7 +34,7 @@ function FeaturesItem({ card }) {
           />
           {/* Imagen 2 */}
           <Image
-            src="/featureItem2.jpg"
+            src="/image/yacht/featureItem6.jpg"
             width={300}
             height={300}
             alt="Picture of the author"

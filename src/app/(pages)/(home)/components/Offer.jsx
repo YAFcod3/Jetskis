@@ -21,7 +21,7 @@ function Offer() {
 
       {/* IMAGE CONTAINER */}
       <div className="flex-1 w-full relative md:h-full">
-        <Image fill className="cover" src="/featureItem5.jpg" alt="" />
+        <Image fill className="cover" src="/image/yacht/featureItem5.jpg" alt="" />
       </div>
     </div>
   );
