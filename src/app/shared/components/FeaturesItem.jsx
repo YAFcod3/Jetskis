@@ -18,9 +18,9 @@ function FeaturesItem({ card }) {
         <div className="w-full h-56 overflow-hidden relative group">
           {/* Imagen 1 */}
           <Image
-          // blurDataURL="data:image/jpeg..."
-          // onLoad={}
-          // onLoadingComplete={}
+            // blurDataURL="data:image/jpeg..."
+            // onLoad={}
+            // onLoadingComplete={}
             // loader={imageLoader}
             src={image}
             width={300}
@@ -61,7 +61,10 @@ function FeaturesItem({ card }) {
             <span className="text-lg text-black font-semibold">
               $ {pricePerHour}
             </span>
-            <Link href='/item/3' className="bg-blue-600 text-sm rounded-md text-white px-2 py-2 hover:bg-blue-400 ">
+            <Link
+              href="/item/3"
+              className="bg-blue-600 text-sm rounded-md text-white px-2 py-2 hover:bg-blue-400 "
+            >
               More Details
             </Link>
           </div>
