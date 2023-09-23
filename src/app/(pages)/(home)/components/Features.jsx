@@ -1,6 +1,7 @@
 import React from "react";
 import FeaturesItem from "../../../shared/components/FeaturesItem";
 import { jetSkis } from "../../../dbTemporal/jetKit";
+import Link from "next/link";
 
 function Features() {
   return (
@@ -24,9 +25,9 @@ function Features() {
 
 
       <div className="flex flex-col items-center md:mt-10  ">
-        <button className="bg-blue-600 font-semibold text-white px-4 py-2 md:text-lg rounded-md hover:bg-blue-400">
+        <Link href='/catalogue' className="bg-blue-600 font-semibold text-white px-4 py-2 md:text-lg rounded-md hover:bg-blue-400">
           Explore More --
-        </button>
+        </Link>
       </div>
 
 

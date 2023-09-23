@@ -1,16 +1,15 @@
 import Navbar from "@/app/shared/common/Navbar";
 import React from "react";
-import FaqChild from "./components/FaqChild";
 
-function Faq() {
+function Reserve() {
   return (
     <>
       <Navbar />
       <div className="relative" style={{ top: "86px" }}>
-        <div className="py-14 pb-36 max-w-5xl mx-auto"><FaqChild/></div>
+        <div className="py-24 h-screen">Formulario para rentals</div>
       </div>
     </>
   );
 }
 
-export default Faq;
+export default Reserve;

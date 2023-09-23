@@ -61,9 +61,9 @@ function FeaturesItem({ card }) {
             <span className="text-lg text-black font-semibold">
               $ {pricePerHour}
             </span>
-            <button className="bg-blue-600 text-sm rounded-md text-white px-2 py-2 hover:bg-blue-400 ">
+            <Link href='/item/3' className="bg-blue-600 text-sm rounded-md text-white px-2 py-2 hover:bg-blue-400 ">
               More Details
-            </button>
+            </Link>
           </div>
         </div>
       </div>
