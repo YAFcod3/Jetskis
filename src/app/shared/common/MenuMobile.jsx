@@ -7,7 +7,7 @@ import Link from "next/link";
 const links = [
   { id: 1, title: "Home", url: "/" },
   { id: 2, title: "Our Services", url: "/catalogue" },
-  { id: 3, title: "FAQ", url: "/catalogue" },
+  { id: 3, title: "FAQ", url: "/faq" },
   { id: 4, title: "About us", url: "/about" },
   { id: 5, title: "Contact us", url: "/contact" },
 ];
