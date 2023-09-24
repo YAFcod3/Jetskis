@@ -13,30 +13,28 @@ const links = [
 ];
 
 //  mobile menu
-const MenuMobile = () => {
-  const [open, setOpen] = useState(false);
-
+const MenuMobile = ({ open, setOpenMenuMobile }) => {
   return (
     <div>
       {/* SHORTCUT */}
-      <Image
-        src="/barra-de-menus.png"
-        // src={open ? "/close.png" : "/open.png"}
-        alt=""
-        width={25}
-        height={25}
-        onClick={() => setOpen(!open)}
-        className="cursor-pointer"
-      />
+
       {open && (
-        <div className="bg-blue-700 text-white font-semibold absolute top-0 left-0 w-full h-screen flex flex-col gap-8 items-center justify-center text-lg z-20">
+        <div className="bg-gradient-to-r from-blue-700 to-cyan-400 text-white font-semibold absolute top-0 left-0 w-full h-screen flex flex-col gap-8 items-center justify-center text-lg z-20">
           {links.map((item) => (
-            <Link href={item.url} key={item.id} onClick={() => setOpen(false)}>
+            <Link href={item.url} key={item.id} onClick={() => setOpenMenuMobile(false)}>
               {item.title}
             </Link>
           ))}
-          <div className="cursor-pointer" onClick={() => setOpen(false)}>
-            Close
+
+          <div
+            className="cursor-pointer"
+            onClick={() => setOpenMenuMobile(false)}
+          >
+            <img
+              src="/menu-close.png"
+              alt="close"
+              className="absolute top-6 left-4 w-10 h-10"
+            />
           </div>
         </div>
       )}

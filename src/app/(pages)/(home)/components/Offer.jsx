@@ -8,7 +8,7 @@ function Offer() {
       <div className="flex-1 flex flex-col justify-center items-center text-center gap-8 p-6">
         <h1 className="text-white text-3xl font-bold xl:text-6xl">
           {" "}
-          Jet Ski Offers
+          Topical Breeze Charters
         </h1>
         <p className="text-white xl:text-xl">
           Exclusive jet ski, enjoy your day with this aquatic ship with a 10%
