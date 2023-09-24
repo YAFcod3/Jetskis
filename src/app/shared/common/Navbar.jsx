@@ -27,7 +27,13 @@ function Navbar({ type }) {
     };
   }, []);
 
+
+
+
   return (
+
+
+    
     <nav className="w-full fixed z-40 ">
       <div
         className={` transition duration-500 ${
@@ -38,7 +44,7 @@ function Navbar({ type }) {
             : "bg-white shadow-lg"
         }`}
       >
-        <div className="px-4 md:px-8 py-6 flex max-w-7xl mx-auto  md:flex-row items-center justify-between">
+        <div className="px-4 md:px-8 py-6 flex max-w-8xl mx-auto  md:flex-row items-center justify-between">
           <Image
             src={
               type === "showEffect"
