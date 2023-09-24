@@ -1,4 +1,4 @@
-import { jetSkis } from '@/app/dbTemporal/jetKit';
+import { yaths } from '@/app/dbTemporal/yaths';
 import FeaturesItem from '@/app/shared/components/FeaturesItem';
 import React from 'react'
 
@@ -13,15 +13,15 @@ function AllItems() {
       >
 
 
-        {jetSkis.map((card) => (
+        {yaths.map((card) => (
           <FeaturesItem key={card.id} card={card} />
           // console.log(card)
         ))}
-         {jetSkis.map((card) => (
+         {yaths.map((card) => (
           <FeaturesItem key={card.id} card={card} />
           // console.log(card)
         ))}
-         {jetSkis.map((card) => (
+         {yaths.map((card) => (
           <FeaturesItem key={card.id} card={card} />
           // console.log(card)
         ))}

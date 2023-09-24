@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Jet Ski Rocket 2000",
-      "image": "https://images.pexels.com/photos/18274189/pexels-photo-18274189/free-photo-of-mar-playa-oceano-rocas.jpeg?auto=compress&cs=tinysrgb&w=600", 
+      "image": "https://images.pexels.com/photos/1430671/pexels-photo-1430671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
       "pricePerHour": 75,
       "description": "El Jet Ski Rocket 2000 es ideal para los amantes de la velocidad. Alcanza una velocidad máxima de 70 mph y ofrece una experiencia emocionante en el agua.",
       "rating": 4.7,
@@ -18,8 +18,8 @@
     {
       "id": 2,
       "name": "AquaRider Supreme",
-      "image": "https://images.pexels.com/photos/2412611/pexels-photo-2412611.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "pricePerHour": 60,
+      "image": "https://images.pexels.com/photos/2300397/pexels-photo-2300397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "pricePerHour" : 60,
       "description": "El AquaRider Supreme es un jet ski versátil con una gran capacidad de almacenamiento. Perfecto para explorar la costa y hacer un picnic en la playa.",
       "rating": 4.5,
       "reviews": 35,
@@ -33,7 +33,7 @@
     {
       "id": 3,
       "name": "WaveMaster X-Treme",
-      "image": "https://images.pexels.com/photos/144634/pexels-photo-144634.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "image": "https://images.pexels.com/photos/12933764/pexels-photo-12933764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "pricePerHour": 80,
       "description": "El WaveMaster X-Treme ofrece una experiencia de conducción suave y estable. Ideal para realizar acrobacias y maniobras en el agua.",
       "rating": 4.9,
@@ -48,7 +48,7 @@
     {
       "id": 4,
       "name": "OceanBlaster Pro",
-      "image": "https://images.pexels.com/photos/42092/pexels-photo-42092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "image": "https://images.pexels.com/photos/12001171/pexels-photo-12001171.jpeg?auto=compress&cs=tinysrgb&w=600",
       "pricePerHour": 70,
       "description": "El OceanBlaster Pro es perfecto para el surf de jet ski. Con su potente motor, puedes enfrentarte a olas grandes y emocionantes.",
       "rating": 4.6,
@@ -63,8 +63,8 @@
     {
       "id": 5,
       "name": "SurgePro 3000",
-      "image": "https://images.pexels.com/photos/3642683/pexels-photo-3642683.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "pricePerHour": 85,
+      "image": "https://images.pexels.com/photos/1430676/pexels-photo-1430676.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "pricePerHour" : 85,
       "description": "El SurgePro 3000 es un jet ski de alto rendimiento diseñado para la emoción pura. Experimenta la adrenalina al máximo con este jet ski.",
       "rating": 4.8,
       "reviews": 39,
@@ -78,7 +78,7 @@
     {
       "id": 6,
       "name": "SunSplash Turbo",
-      "image": "https://images.pexels.com/photos/843633/pexels-photo-843633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "image": "https://images.pexels.com/photos/12407258/pexels-photo-12407258.jpeg?auto=compress&cs=tinysrgb&w=600",
       "pricePerHour": 75,
       "description": "El Jet Ski Rocket 2000 es ideal para los amantes de la velocidad. Alcanza una velocidad máxima de 70 mph y ofrece una experiencia emocionante en el agua.",
       "rating": 4.7,

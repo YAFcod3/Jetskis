@@ -11,6 +11,8 @@ function FeaturesItem({ card }) {
   const { name, description, image, pricePerHour, technicalSpecifications } =
     card;
 
+  let fieldMaxSpeed = technicalSpecifications.maxSpeed ? true : false;
+
   return (
     <>
       <div className="w-[280px] shadow-lg rounded-md ">
@@ -34,7 +36,12 @@ function FeaturesItem({ card }) {
           />
           {/* Imagen 2 */}
           <Image
-            src="/image/yacht/featureItem6.jpg"
+            src={
+              (fieldMaxSpeed
+                ? "https://images.pexels.com/photos/1430676/pexels-photo-1430676.jpeg?auto=compress&cs=tinysrgb&w=600"
+                : "https://images.pexels.com/photos/2412611/pexels-photo-2412611.jpeg?auto=compress&cs=tinysrgb&w=600")
+            }
+            // src="/image/yacht/featureItem6.jpg"
             width={300}
             height={300}
             alt="Picture of the author"
@@ -52,10 +59,22 @@ function FeaturesItem({ card }) {
               ? description.slice(0, 65) + "..."
               : description}
           </span>
-          <span className="text-sm text-slate-700">
-            <span className="font-bold">maxSpeed:</span>{" "}
-            {technicalSpecifications.maxSpeed}
-          </span>
+
+          {fieldMaxSpeed ? (
+            <>
+              <span className="text-sm text-slate-700">
+                <span className="font-bold">max Speed:</span>{" "}
+                {technicalSpecifications.maxSpeed}
+              </span>
+            </>
+          ) : (
+            <>
+              <span className="text-sm text-slate-700">
+                <span className="font-bold">max Capacity:</span>{" "}
+                {technicalSpecifications.maxCapacity}
+              </span>
+            </>
+          )}
           {/* flex precio - boton */}
           <div className="flex justify-between items-center w-full">
             <span className="text-lg text-black font-semibold">

@@ -2,6 +2,7 @@ import React from "react";
 import FeaturesItem from "../../../shared/components/FeaturesItem";
 import { jetSkis } from "../../../dbTemporal/jetKit";
 import Link from "next/link";
+import { yaths } from "@/app/dbTemporal/yaths";
 
 function Features() {
   return (
@@ -14,7 +15,7 @@ function Features() {
       >
 
 
-        {jetSkis.map((card) => (
+        {yaths.map((card) => (
           <FeaturesItem key={card.id} card={card} />
           // console.log(card)
         ))}
