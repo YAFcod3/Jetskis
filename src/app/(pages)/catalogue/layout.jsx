@@ -1,33 +1,20 @@
 import Navbar from "@/app/shared/common/Navbar";
 import Link from "next/link";
 import React from "react";
+// import {  Lora  } from "next/font/google";
+
+// const lora = Lora({ subsets: ["latin"] });
 
 function Layout({ children }) {
-
-
-
-
-
-  
-
-
-
   return (
     <div>
       <Navbar />
 
-      <div
-        className="relative"  style={{ top: "66px" }}
-      >
-        {" "}
-        <nav className="flex gap-4 py-14   text-xl md:text-2xl justify-center md:justify-start md:max-w-5xl mx-auto  ">
-          <div className=" text-gray-500 hover:text-gray-700 " >
-          <Link href="/catalogue">Yaths</Link>
-          </div>
-          <div className=" text-gray-500 hover:text-gray-700 " >
-          <Link href="/catalogue/jetskis">Jet Skis</Link>
-          </div>
-        </nav>
+      <div className="relative " style={{ top: "86px" }}>
+        {/* <div className={lora.className}> */}
+        {/* <h2 className="text-center bold text-3xl py-4">Choose a Category</h2> */}
+
+        {/* </div> */}
       </div>
       {children}
     </div>
