@@ -106,9 +106,12 @@ function Navbar({ type }) {
 
           <div className="sm:hidden">
             {/* <MenuMobile showBackground={showBackground}/> */}
+
+          
+            
             <Image
-              src={
-                showBackground ? "/open-menu-black.png" : "/open-menu-white.png"
+              src={  type === "showEffect" ?(showBackground ? "/open-menu-black.png" : "/open-menu-white.png") :"/open-menu-black.png"
+                
               }
               // src={open ? "/close.png" : "/open.png"}
               alt=""
