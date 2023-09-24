@@ -24,7 +24,7 @@ function HeroVideo() {
           drop-shadow-xl
            "
         >
-         Yaths Rentals
+         Yachts Rentals
         </p>
         <p className="text-white text-[8px] md:text-lg mt-3 my-4 w-[40%] md:w-[80%] lg:w-[50%] drop-shadow-xl ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minus

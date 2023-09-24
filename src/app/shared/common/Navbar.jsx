@@ -11,7 +11,6 @@ function Navbar({ type }) {
   const [showBackground, setShowBackground] = useState(false);
   const [openMenuMobile, setOpenMenuMobile] = useState(false);
 
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= TOP_OFFSET) {
@@ -56,7 +55,21 @@ function Navbar({ type }) {
           />
 
           {/* logo */}
-          <div></div>
+          <div>
+            <h2
+              className={` hidden lg:block ml-24 text-3xl bold lg:cursor-pointer ${
+                type === "showEffect"
+                  ? showBackground
+                    ? "text-black"
+                    : " text-white"
+                  : "text-black"
+              }
+            
+            `}
+            >
+             Breezes  <span className="text-xl">of</span> Paradise 
+            </h2>
+          </div>
 
           {/* elementos nav */}
           <div
@@ -79,7 +92,7 @@ function Navbar({ type }) {
               href="/catalogue"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
-              <NavbarItem label="Our services" />
+              <NavbarItem label="Catalogue" />
             </Link>
 
             <Link
@@ -107,11 +120,13 @@ function Navbar({ type }) {
           <div className="sm:hidden">
             {/* <MenuMobile showBackground={showBackground}/> */}
 
-          
-            
             <Image
-              src={  type === "showEffect" ?(showBackground ? "/open-menu-black.png" : "/open-menu-white.png") :"/open-menu-black.png"
-                
+              src={
+                type === "showEffect"
+                  ? showBackground
+                    ? "/open-menu-black.png"
+                    : "/open-menu-white.png"
+                  : "/open-menu-black.png"
               }
               // src={open ? "/close.png" : "/open.png"}
               alt=""
@@ -123,7 +138,10 @@ function Navbar({ type }) {
           </div>
         </div>
 
-        <MenuMobile open={openMenuMobile} setOpenMenuMobile={setOpenMenuMobile}/>
+        <MenuMobile
+          open={openMenuMobile}
+          setOpenMenuMobile={setOpenMenuMobile}
+        />
       </div>
     </nav>
   );
