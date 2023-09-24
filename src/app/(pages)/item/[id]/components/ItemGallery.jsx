@@ -2,7 +2,7 @@ import React from 'react'
 
 function ItemGallery() {
   return (
-    <div className='relative min-h-screen' style={{top:'250px'}}>ItemGallery</div>
+    <div className='md:relative min-h-screen md:top-[250px]' >ItemGallery</div>
   )
 }
 
