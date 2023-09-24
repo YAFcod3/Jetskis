@@ -7,8 +7,8 @@ import Head from "next/head";
 const lora = Lora({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Jet Ski Rentals",
-  description: "Jet Ski Reservation",
+  title: "Paradise Yacht Rentals",
+  description: "Paradise Yacht Rentals",
 };
 
 export default function RootLayout({ children }) {
