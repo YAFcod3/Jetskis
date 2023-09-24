@@ -82,7 +82,7 @@ function FeaturesItem({ card }) {
             </span>
             <Link
               href="/item/3"
-              className="bg-blue-600 text-sm rounded-md text-white px-2 py-2 hover:bg-blue-400 "
+              className="bg-gradient-to-r from-blue-900 to-cyan-400 text-sm rounded-md text-white px-2 py-2  hover:from-blue-700 hover:to-cyan-200 "
             >
               More Details
             </Link>

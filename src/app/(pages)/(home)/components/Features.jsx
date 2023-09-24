@@ -26,8 +26,8 @@ function Features() {
 
 
       <div className="flex flex-col items-center md:mt-10  ">
-        <Link href='/catalogue' className="bg-blue-600 font-semibold text-white px-4 py-2 md:text-lg rounded-md hover:bg-blue-400">
-          Explore More --
+        <Link href='/catalogue/yachts' className="bg-gradient-to-r from-blue-900 to-cyan-400 font-semibold text-white px-4 py-2 md:text-lg rounded-md hover:bg-blue-400  hover:from-blue-700 hover:to-cyan-200">
+          Explore More Yachts --
         </Link>
       </div>
 

@@ -22,11 +22,11 @@ function Catalogue() {
           style={{
             backgroundImage: `url(${ "https://images.pexels.com/photos/843633/pexels-photo-843633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"})`,
           }}
-          className="brightness-75%]  hover:opacity-70 bg-cover  sm:border-2 sm:border-slate-200 sm:border-solid sm:rounded-md  w-full sm:w-[300px] md:w-[500px] h-[300px] relative cover"
-          href="/catalogue/yaths"
+          className="brightness-[75%]  hover:opacity-70 bg-cover  sm:border-2 sm:border-slate-200 sm:border-solid sm:rounded-md  w-full sm:w-[300px] md:w-[500px] h-[300px] relative cover"
+          href="/catalogue/yachts"
         >
           <span className="absolute right-3 top-3 text-2xl bold  drop-shadow-xl">
-            Yatchs
+          Yachts
           </span>
         </Link>
         <Link
