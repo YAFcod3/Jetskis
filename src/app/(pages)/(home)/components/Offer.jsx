@@ -3,7 +3,7 @@ import React from "react";
 
 function Offer() {
   return (
-    <div className="bg-blue-600 mt-44  h-screen flex flex-col-reverse md:flex-row md:justify-between md:h-[65vh]">
+    <div className="footer bg-gradient-to-r from-blue-900 to-cyan-400 mt-44  h-screen flex flex-col-reverse md:flex-row md:justify-between md:h-[65vh]">
       {/* TEXT CONTAINER */}
       <div className="flex-1 flex flex-col justify-center items-center text-center gap-8 p-6">
         <h1 className="text-white text-3xl font-bold xl:text-6xl">
