@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTelegram, FaTwitter, FaWhatsapp } from "reac
 
 const Footer = () => {
   return (
-    <footer className="m-0 footer bg-gradient-to-r from-blue-900 to-cyan-400 text-white py-8">
+    <footer className="footer bg-gradient-to-r from-blue-900 to-cyan-400 text-white py-8">
       <div className="container mx-auto">
         <div className="text-center md:text-left">
           <h1 className="lg:text-4xl text-3xl font-semibold mb-4">
