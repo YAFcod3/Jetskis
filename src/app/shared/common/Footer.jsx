@@ -1,62 +1,103 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import Image from "next/image";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTelegram,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer bg-gradient-to-r from-blue-900 to-cyan-400 text-white py-8">
       <div className="mx-auto max-w-screen-xl">
-        <div className="md:flex md:justify-between">
-            <div className="mb-6 md:mb-0">
-                <a href="https://flowbite.com" className="flex flex-iniital">
-                    <img src="/Logo-white.svg" className="mr-3 w-15 h-10" alt="FlowBite Logo" />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Nombre del negocio</span>
-                </a>
+        <div className="md:flex md:justify-between ">
+          <div className="mb-6 md:mb-0 flex justify-center">
+            <a href="https://flowbite.com" className="flex flex-inital flex-row">
+              <Image
+                src="/Logo-white.svg"
+                width={50}
+                height={50}
+                className="w-16 md:w-8 lg:w-48"
+                alt="FlowBite Logo"
+              />
+              <div className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              Breezes  <span className="text-xl">of</span> Paradise 
+              </div>
+            </a>
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 sm:gap-6">
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">
+                  Resources
+                </h2>
+                <ul className="text-white">
+                  <li className="mb-4">
+                    <a href="https://flowbite.com" className="hover:underline">
+                      Flowbite
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://tailwindcss.com/"
+                      className="hover:underline"
+                    >
+                      Tailwind CSS
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">
+                  Follow us
+                </h2>
+                <ul className="text-white">
+                  <li className="mb-4">
+                    <a
+                      href="https://github.com/themesberg/flowbite"
+                      className="hover:underline "
+                    >
+                      Github
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.gg/4eeurUVvTy"
+                      className="hover:underline"
+                    >
+                      Discord
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">
+                  Legal
+                </h2>
+                <ul className="text-white">
+                  <li className="mb-4">
+                    <a href="#" className="hover:underline">
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="hover:underline">
+                      Terms &amp; Conditions
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                <div>
-                    <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">Resources</h2>
-                    <ul className="text-white">
-                        <li className="mb-4">
-                            <a href="https://flowbite.com" className="hover:underline">Flowbite</a>
-                        </li>
-                        <li>
-                            <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">Follow us</h2>
-                    <ul className="text-white">
-                        <li className="mb-4">
-                            <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
-                        </li>
-                        <li>
-                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">Legal</h2>
-                    <ul className="text-white">
-                        <li className="mb-4">
-                            <a href="#" className="hover:underline">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#" className="hover:underline">Terms &amp; Conditions</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          </div>
         </div>
-        
-    </div>
+      </div>
 
-        <div className="text-center mt-4">
-          <div className="border-b-2  border-blue-300 pb-2 mb-2"></div>
-          <div className="flex justify-center mt-3">
-           
-            {/*<a
+      <div className="text-center mt-4">
+        <div className="border-b-2  border-blue-300 pb-2 mb-2"></div>
+        <div className="flex justify-center mt-3">
+          {/*<a
               href="#"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
@@ -70,12 +111,11 @@ const Footer = () => {
               </svg>
             </a>*/}
 
-            <Link className="mx-2" href="/contact">
-              <FaFacebook className="text-2xl overflow-hidden transition-transform transform hover:scale-110" />
-            </Link>
+          <Link className="mx-2" href="/contact">
+            <FaFacebook className="text-2xl overflow-hidden transition-transform transform hover:scale-110" />
+          </Link>
 
-
-            {/*<a
+          {/*<a
               href="#"
               className="mx-0 px-1.5 overflow-hidden transition-transform transform hover:scale-110"
             >
@@ -89,12 +129,11 @@ const Footer = () => {
               </svg>
             </a>*/}
 
+          <Link className="mx-2" href="/contact">
+            <FaTelegram className="text-2xl overflow-hidden transition-transform transform hover:scale-110" />
+          </Link>
 
-            <Link className="mx-2" href="/contact">
-              <FaTelegram className="text-2xl overflow-hidden transition-transform transform hover:scale-110" />
-            </Link>
-
-            {/*<a
+          {/*<a
               href="#"
               className="mx-0 px-1.5 overflow-hidden transition-transform transform hover:scale-110"
             >
@@ -108,11 +147,11 @@ const Footer = () => {
               </svg>
             </a>*/}
 
-            <Link className="mx-2" href="/contact">
-              <FaInstagram className="text-2xl overflow-hidden transition-transform transform hover:scale-110" />
-            </Link>
+          <Link className="mx-2" href="/contact">
+            <FaInstagram className="text-2xl overflow-hidden transition-transform transform hover:scale-110" />
+          </Link>
 
-            {/* <a
+          {/* <a
               href="#"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
@@ -126,14 +165,12 @@ const Footer = () => {
               </svg>
             </a> */}
 
-
-            <Link className="mx-2" href="/contact">
-              <FaWhatsapp className="text-2xl overflow-hidden transition-transform transform hover:scale-110" />
-            </Link>
-            </div>
-          </div>
-        </footer>
-    
+          <Link className="mx-2" href="/contact">
+            <FaWhatsapp className="text-2xl overflow-hidden transition-transform transform hover:scale-110" />
+          </Link>
+        </div>
+      </div>
+    </footer>
   );
 };
 
