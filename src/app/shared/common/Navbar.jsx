@@ -4,23 +4,10 @@ import NavbarItem from "./NavbarItem";
 import Link from "next/link";
 import MenuMobile from "./MenuMobile";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
-
-
-
-
-
-
+import { usePathname } from "next/navigation";
 
 function Navbar({ type }) {
-
-
-
-
-
-
-
   const pathname = usePathname();
   const router = useRouter();
 
@@ -110,23 +97,16 @@ function Navbar({ type }) {
               <NavbarItem label="Home" />
             </Link> */}
 
-            <Link 
-              href="/"
+            <Link
               className={`overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/"
-                  ? "text-blue-700  "
-                  : ''
-                  // : type === "showEffect"
-                  // ? showBackground
-                  //   ? "text-black "
-                  //   : "text-white "
-                  // : "text-black "
+                  ? "bg-blue-400 bg-opacity-30 font-semibold  p-1 rounded-md "
+                  : ""
               }`}
-             
+              href="/"
             >
               <NavbarItem label="Home" />
             </Link>
-
 
             {/* <Link
               href="/catalogue"
@@ -135,22 +115,16 @@ function Navbar({ type }) {
               <NavbarItem label="Catalogue" />
             </Link> */}
 
-
-
-            <Link 
-              href="/catalogue"
+            <Link
               className={`overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/catalogue"
-                  ? "text-blue-700  "
-                  : ''
-                
+                  ? "bg-blue-400 bg-opacity-30 font-semibold  p-1 rounded-md "
+                  : ""
               }`}
-             
+              href="/catalogue"
             >
               <NavbarItem label="Catalogue" />
             </Link>
-
-            
 
             {/* <Link
               href="/faq"
@@ -159,19 +133,13 @@ function Navbar({ type }) {
               <NavbarItem label="FAQ" />
             </Link> */}
 
-            <Link 
+            <Link
               href="/faq"
               className={`overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/faq"
-                  ? "text-blue-700  "
-                  : ''
-                  // : type === "showEffect"
-                  // ? showBackground
-                  //   ? "text-black "
-                  //   : "text-white "
-                  // : "text-black "
+                  ? "bg-blue-400 bg-opacity-30 font-semibold  p-1 rounded-md "
+                  : ""
               }`}
-             
             >
               <NavbarItem label="FAQ" />
             </Link>
@@ -183,19 +151,13 @@ function Navbar({ type }) {
               <NavbarItem label="Contact us" />
             </Link> */}
 
-            <Link 
+            <Link
               href="/contact"
               className={`overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/contact"
-                  ? "text-blue-700  "
+                  ? "bg-blue-400 bg-opacity-30 font-semibold  p-1 rounded-md "
                   : ""
-                  // : type === "showEffect"
-                  // ? showBackground
-                  //   ? "text-black "
-                  //   : "text-white "
-                  // : "text-black "
               }`}
-             
             >
               <NavbarItem label="Contact us" />
             </Link>
@@ -206,18 +168,13 @@ function Navbar({ type }) {
             >
               <NavbarItem label="About us" />
             </Link> */}
-            <Link  href="/about"
+            <Link
+              href="/about"
               className={`link overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/about"
-                  ? "text-blue-700  "
+                  ? "bg-blue-400 bg-opacity-30 font-semibold  p-1 rounded-md "
                   : ""
-                  // : type === "showEffect"
-                  // ? showBackground
-                  //   ? "text-black "
-                  //   : "text-white "
-                  // : "text-black "
               }`}
-             
             >
               <NavbarItem label="About us" />
             </Link>
