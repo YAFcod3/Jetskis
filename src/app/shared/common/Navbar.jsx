@@ -4,8 +4,27 @@ import NavbarItem from "./NavbarItem";
 import Link from "next/link";
 import MenuMobile from "./MenuMobile";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+
+
+
+
+
+
 
 function Navbar({ type }) {
+
+
+
+
+
+
+
+  const pathname = usePathname();
+  const router = useRouter();
+
+  // const router= useRouter()
   const TOP_OFFSET = 66;
 
   const [showBackground, setShowBackground] = useState(false);
@@ -27,13 +46,7 @@ function Navbar({ type }) {
     };
   }, []);
 
-
-
-
   return (
-
-
-    
     <nav className="w-full fixed z-40 ">
       <div
         className={` transition duration-500 ${
@@ -44,7 +57,11 @@ function Navbar({ type }) {
             : "bg-white shadow-lg"
         }`}
       >
-        <div className="px-4 md:px-8 py-6 flex max-w-8xl mx-auto  md:flex-row items-center justify-between">
+        {/* logo */}
+        <div
+          className="px-4 md:px-8 py-6 flex max-w-8xl mx-auto  md:flex-row items-center justify-between"
+          onClick={() => router.push("/")}
+        >
           <Image
             src={
               type === "showEffect"
@@ -57,13 +74,12 @@ function Navbar({ type }) {
             width={100}
             height={100}
             alt="Picture of the author"
-            className="absolute w-10 md:w-20 h-80 object-cover z-10 opacity-100 cursor-pointer hover:animate-pulse overflow-hidden transition-transform transform hover:scale-110"
+            className="pointer-events-none absolute w-10 md:w-20 h-80 object-cover z-10 opacity-100 cursor-pointer hover:animate-pulse overflow-hidden transition-transform transform hover:scale-110"
           />
 
-          {/* logo */}
           <div>
             <h2
-              className={` hidden lg:block ml-24 text-3xl bold lg:cursor-pointer ${
+              className={` hidden lg:block ml-24 text-3xl bold lg:cursor-pointer  ${
                 type === "showEffect"
                   ? showBackground
                     ? "text-black"
@@ -73,7 +89,7 @@ function Navbar({ type }) {
             
             `}
             >
-             Breezes  <span className="text-xl">of</span> Paradise 
+              Breezes <span className="text-xl">of</span> Paradise
             </h2>
           </div>
 
@@ -87,37 +103,121 @@ function Navbar({ type }) {
                 : "text-black "
             }`}
           >
-            <Link
+            {/* <Link
               href="/"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="Home" />
+            </Link> */}
+
+            <Link 
+              href="/"
+              className={`overflow-hidden transition-transform transform hover:scale-110 ${
+                pathname === "/"
+                  ? "text-blue-700  "
+                  : ''
+                  // : type === "showEffect"
+                  // ? showBackground
+                  //   ? "text-black "
+                  //   : "text-white "
+                  // : "text-black "
+              }`}
+             
+            >
+              <NavbarItem label="Home" />
             </Link>
 
-            <Link
+
+            {/* <Link
               href="/catalogue"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="Catalogue" />
+            </Link> */}
+
+
+
+            <Link 
+              href="/catalogue"
+              className={`overflow-hidden transition-transform transform hover:scale-110 ${
+                pathname === "/catalogue"
+                  ? "text-blue-700  "
+                  : ''
+                
+              }`}
+             
+            >
+              <NavbarItem label="Catalogue" />
             </Link>
 
-            <Link
+            
+
+            {/* <Link
               href="/faq"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="FAQ" />
+            </Link> */}
+
+            <Link 
+              href="/faq"
+              className={`overflow-hidden transition-transform transform hover:scale-110 ${
+                pathname === "/faq"
+                  ? "text-blue-700  "
+                  : ''
+                  // : type === "showEffect"
+                  // ? showBackground
+                  //   ? "text-black "
+                  //   : "text-white "
+                  // : "text-black "
+              }`}
+             
+            >
+              <NavbarItem label="FAQ" />
             </Link>
 
-            <Link
+            {/* <Link
               href="/contact"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="Contact us" />
+            </Link> */}
+
+            <Link 
+              href="/contact"
+              className={`overflow-hidden transition-transform transform hover:scale-110 ${
+                pathname === "/contact"
+                  ? "text-blue-700  "
+                  : ""
+                  // : type === "showEffect"
+                  // ? showBackground
+                  //   ? "text-black "
+                  //   : "text-white "
+                  // : "text-black "
+              }`}
+             
+            >
+              <NavbarItem label="Contact us" />
             </Link>
 
-            <Link
+            {/* <Link
               href="/about"
               className="overflow-hidden transition-transform transform hover:scale-110"
+            >
+              <NavbarItem label="About us" />
+            </Link> */}
+            <Link  href="/about"
+              className={`link overflow-hidden transition-transform transform hover:scale-110 ${
+                pathname === "/about"
+                  ? "text-blue-700  "
+                  : ""
+                  // : type === "showEffect"
+                  // ? showBackground
+                  //   ? "text-black "
+                  //   : "text-white "
+                  // : "text-black "
+              }`}
+             
             >
               <NavbarItem label="About us" />
             </Link>
