@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 
 function ItemInfo() {
   return (
@@ -39,7 +40,17 @@ drop-shadow-3xl ml-3 text-2xl md:text-3xl "
       <p className="text-slate-600 font-semibold text-sm">
         Luxury yacht available for hourly rental
       </p>
+      
       {/* desc 2 */}
+      <div className="flex items-center">
+      <span className="mr-2 text-lg text-red-700">
+        <FaMapMarkerAlt />
+      </span>
+      <p className='text-sm text-green-800'>123 Main St, Example City, FL 12345, USA</p>
+    </div>
+ 
+
+
 
       <p className="text-slate-600  font-serif  text-md">
         Includes captain and crew

@@ -17,7 +17,7 @@ function Catalogue() {
     <div className={lora.className}>
      
 
-      <div className="flex flex-col sm:flex-row py-20 items-center sm:justify-center sm:gap-10 md:gap-16 min-h-screen">
+      <div className="flex flex-col sm:flex-row py-16 items-center sm:justify-center sm:gap-10 md:gap-16 md:min-h-screen">
         <Link
           style={{
             backgroundImage: `url(${ "https://images.pexels.com/photos/843633/pexels-photo-843633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"})`,
