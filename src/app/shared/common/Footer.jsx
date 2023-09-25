@@ -10,16 +10,16 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer bg-gradient-to-r from-blue-900 to-cyan-400 text-white py-8">
+    <footer className="footer bg-gradient-to-r from-blue-900 to-cyan-400 text-white py-8 px-4">
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between ">
-          <div className="mb-6 md:mb-0 flex justify-center">
+          <div className="mb-6 md:mb-0 flex justify-start md:justify-center">
             <a href="https://flowbite.com" className="flex flex-inital flex-row">
               <Image
                 src="/Logo-white.svg"
                 width={50}
                 height={50}
-                className="w-16 md:w-8 lg:w-48"
+                className="w-28 md:w-32 lg:w-48"
                 alt="FlowBite Logo"
               />
               <div className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function Info() {
   return (
-    <div className="flex flex-col lg:flex-row max-w-screen-xl mx-auto justify-center h-auto gap-4 lg:gap-8 mb-32">
-      <div className="flex flex-col bg-white flex-auto items-center lg:w-1/3 p-4">
+    <div className="flex flex-col lg:flex-row max-w-screen-xl mx-auto justify-center h-auto gap-4 lg:gap-8 pb-32">
+      <div className="flex flex-col flex-auto items-center lg:w-1/3 p-4">
         <Image
           width={150}
           height={50}
@@ -12,7 +12,7 @@ function Info() {
           alt="ssgs"
           className="w-16 md:w-32 lg:w-48"
         />
-        <h1 className="text-3xl text-blue-900 text-center">
+        <h1 className="text-3xl text-blue-500 font-bold text-center mb-4">
           Skin<span className="text-3xl">Diving</span>
         </h1>
         <p className="text-center max-w-md">
@@ -23,7 +23,7 @@ function Info() {
         </p>
       </div>
 
-      <div className="flex flex-col bg-white flex-auto items-center lg:w-1/3 p-4">
+      <div className="flex flex-col flex-auto items-center lg:w-1/3 p-4">
         <Image
           width={150}
           height={50}
@@ -31,7 +31,7 @@ function Info() {
           alt="ssgs"
           className="w-16 md:w-32 lg:w-48"
         />
-        <h1 className="text-3xl text-blue-900 text-center">
+        <h1 className="text-3xl text-blue-500 font-bold text-center mb-4">
           Gastronomic<span className="text-3xl">Services</span>
         </h1>
         <p className="text-center max-w-md">
@@ -42,7 +42,7 @@ function Info() {
         </p>
       </div>
 
-      <div className="flex flex-col bg-white flex-auto items-center lg:w-1/3 p-4">
+      <div className="flex flex-col  flex-auto items-center lg:w-1/3 p-4">
         <Image
           width={150}
           height={50}
@@ -50,7 +50,7 @@ function Info() {
           alt="ssgs"
           className="w-16 md:w-32 lg:w-48"
         />
-        <h1 className="text-3xl text-blue-900 text-center">
+        <h1 className="text-3xl text-blue-500 font-bold text-center mb-4">
           Massage<span className="text-3xl">Service</span>
         </h1>
         <p className="text-center max-w-md">

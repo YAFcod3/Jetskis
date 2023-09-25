@@ -44,7 +44,7 @@ function ItemGallery() {
     },
   ];
 
-  console.log(photos.length);
+  // console.log(photos.length);
 
   const [open, setOpen] = useState(false);
   const [sliderNumber, setSliderNumber] = useState(0);
@@ -61,10 +61,17 @@ function ItemGallery() {
 
         {open && (
           <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-40 z-50">
+
+
+
             <FaTimes
-              className="absolute bottom-10 md:right-20 right-4 text-5xl text-white cursor-pointer"
+              className="absolute top-10 md:right-20 right-4 text-5xl text-white cursor-pointer"
               onClick={() => setOpen(false)}
             />
+
+
+
+
 
             <div className="w-full h-full flex justify-center items-center">
               {/* <img src={photos[sliderNumber].src} alt="" className="w-80 h-80vh" /> */}
@@ -88,6 +95,7 @@ function ItemGallery() {
                 alt=""
                 className="w-full h-200px"
               />
+             
             </div>
           ))}
         </div>

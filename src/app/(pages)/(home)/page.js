@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className={sans.className}>
         <FeatureJetSki/>
-        <div className="mt-20 flex max-w-5xl mx-auto  flex-col items-center gap-30">
+        <div className="mt-20 flex mx-auto   bg-gray-100  flex-col items-center gap-30">
           <Info />
         </div>
       </div>

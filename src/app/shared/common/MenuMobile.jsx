@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaTimes } from "react-icons/fa";
 
 const links = [
   { id: 1, title: "Home", url: "/" },
@@ -21,7 +22,11 @@ const MenuMobile = ({ open, setOpenMenuMobile }) => {
       {open && (
         <div className="bg-gradient-to-r from-blue-700 to-cyan-400 text-white font-semibold absolute top-0 left-0 w-full h-screen flex flex-col gap-8 items-center justify-center text-lg z-20">
           {links.map((item) => (
-            <Link href={item.url} key={item.id} onClick={() => setOpenMenuMobile(false)}>
+            <Link
+              href={item.url}
+              key={item.id}
+              onClick={() => setOpenMenuMobile(false)}
+            >
               {item.title}
             </Link>
           ))}
@@ -30,11 +35,12 @@ const MenuMobile = ({ open, setOpenMenuMobile }) => {
             className="cursor-pointer"
             onClick={() => setOpenMenuMobile(false)}
           >
-            <img
+            {/* <img
               src="/menu-close.png"
               alt="close"
               className="absolute top-6 left-4 w-10 h-10"
-            />
+            /> */}
+            <FaTimes className="absolute top-6 right-6 w-10 h-10" />
           </div>
         </div>
       )}

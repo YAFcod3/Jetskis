@@ -7,7 +7,7 @@ function Faq() {
     <>
       <Navbar />
       <div className="relative" style={{ top: "86px" }}>
-        <div className="py-14 pb-36 max-w-5xl mx-auto"><FaqChild/></div>
+        <div className="py-8 pb-36 max-w-5xl mx-auto"><FaqChild/></div>
       </div>
     </>
   );
