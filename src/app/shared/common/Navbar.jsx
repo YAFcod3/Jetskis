@@ -47,9 +47,9 @@ function Navbar({ type }) {
         {/* logo */}
         <div
           className="px-4 md:px-8 py-6 flex max-w-8xl mx-auto  md:flex-row items-center justify-between"
-          onClick={() => router.push("/")}
         >
-          <Image
+          <Image           onClick={() => router.push("/")}
+
             src={
               type === "showEffect"
                 ? showBackground
@@ -79,6 +79,11 @@ function Navbar({ type }) {
               Breezes <span className="text-xl">of</span> Paradise
             </h2>
           </div>
+
+
+
+
+
 
           {/* elementos nav */}
           <div
