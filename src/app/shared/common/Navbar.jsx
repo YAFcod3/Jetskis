@@ -5,10 +5,10 @@ import Link from "next/link";
 import MenuMobile from "./MenuMobile";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
 function Navbar({ type }) {
-  const pathname = usePathname();
+  // const pathname = usePathname();
   const router = useRouter();
 
   // const router= useRouter()
@@ -90,13 +90,13 @@ function Navbar({ type }) {
                 : "text-black "
             }`}
           >
-            {/* <Link
+            <Link
               href="/"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="Home" />
-            </Link> */}
-
+            </Link>
+{/* 
             <Link
               className={`overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/"
@@ -106,16 +106,16 @@ function Navbar({ type }) {
               href="/"
             >
               <NavbarItem label="Home" />
-            </Link>
+            </Link> */}
 
-            {/* <Link
+            <Link
               href="/catalogue"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="Catalogue" />
-            </Link> */}
+            </Link>
 
-            <Link
+            {/* <Link
               className={`overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/catalogue"
                   ? "bg-blue-400 bg-opacity-30 font-semibold  p-1 rounded-md "
@@ -124,16 +124,16 @@ function Navbar({ type }) {
               href="/catalogue"
             >
               <NavbarItem label="Catalogue" />
-            </Link>
+            </Link> */}
 
-            {/* <Link
+            <Link
               href="/faq"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="FAQ" />
-            </Link> */}
+            </Link>
 
-            <Link
+            {/* <Link
               href="/faq"
               className={`overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/faq"
@@ -142,16 +142,16 @@ function Navbar({ type }) {
               }`}
             >
               <NavbarItem label="FAQ" />
-            </Link>
+            </Link> */}
 
-            {/* <Link
+            <Link
               href="/contact"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="Contact us" />
-            </Link> */}
+            </Link>
 
-            <Link
+            {/* <Link
               href="/contact"
               className={`overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/contact"
@@ -160,15 +160,15 @@ function Navbar({ type }) {
               }`}
             >
               <NavbarItem label="Contact us" />
-            </Link>
+            </Link> */}
 
-            {/* <Link
+            <Link
               href="/about"
               className="overflow-hidden transition-transform transform hover:scale-110"
             >
               <NavbarItem label="About us" />
-            </Link> */}
-            <Link
+            </Link>
+            {/* <Link
               href="/about"
               className={`link overflow-hidden transition-transform transform hover:scale-110 ${
                 pathname === "/about"
@@ -177,7 +177,7 @@ function Navbar({ type }) {
               }`}
             >
               <NavbarItem label="About us" />
-            </Link>
+            </Link> */}
           </div>
 
           <div className="sm:hidden">
